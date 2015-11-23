@@ -1,0 +1,51 @@
+<!--It should display correctly if the person viewing it has placed all the files you have supplied in a folder on their machine
+1. It should use at least one of each of HTML img, h1 and div tags (and more if needed)
+2. It should use CSS to set the style of the text and other parts of the design as appropriate, in at least 3 ways.
+3. It should be responsive - it should change the layout if the screen size changes
+The user should be able to change the page in some way by interacting with a GUI element such as a button. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My very responsive page!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+<body id="html">
+    <div class="container-fluid">
+        <ul class="nav nav-tabs nav-justified padding">
+        <li class="center"><h1 class="main">Welcome!</h1></li>
+        <li class="center"><button onclick="changeColor()">Color changer</button></li>
+        <li class="active"><a data-toggle="tab" href="#home">About me</a></li>
+        <li class=""><a data-toggle="tab" href="#portfolio">Portfolio</a></li>
+        <li class=""><a data-toggle="tab" href="#contact">Contact</a></li>
+        </ul>
+        </div>
+
+<div class="container tab-content padding">
+  <div id="home" class="tab-pane fade in active">
+      <div class="container-fluid center main"><h2>About me</h2></br>This is probably where my biography would be if this were a proper portfolio page. But it's not, so this is just a placeholder text, lest I use lorem ipsum. You can check out the rest of the page using the tabs above, or change the background color if pure white is not your color.</div>
+  </div>
+  <div id="portfolio" class="tab-pane fade">
+<div class="row">
+        <div class="container-fluid center main padding"><h2>Portfolio</h2></br>I made some stuff in the past, this is just one example. But repeated three times so it can respond to the window size. I hope you like it.</div>
+  <div class="col-md-4">
+    <table width=100%;><tr><td><img class="center-block" width="300" height="300" src="http://www.howfit.co/wp-content/uploads/2015/04/web3.png"/></td></tr><tr><td class="center">Icon design for HowFit</td></tr></table></div>
+  <div class="col-md-4">
+    <table width=100%;><tr><td><img class="center-block" width="300" height="300" src="http://www.howfit.co/wp-content/uploads/2015/04/web3.png"/></td></tr><tr><td class="center">Icon design for HowFit</td></tr></table></div>
+  <div class="col-md-4"
+  ><table width=100%;><tr><td><img class="center-block" width="300" height="300" src="http://www.howfit.co/wp-content/uploads/2015/04/web3.png"/></td></tr><tr><td class="center">Icon design for HowFit</td></tr></table></div>
+</div>
+  </div>
+  <div id="contact" class="tab-pane fade">
+      <div class="container-fluid center main"><h2>Contact me!</h2></br>Contact information not found. 404. Error. Etc...</div>
+  </div>
+</div>
+
+    </body>
+</html>

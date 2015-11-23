@@ -1,0 +1,30 @@
+.menubar {
+    text-align:center;
+}
+
+.menu {
+    display:inline;
+    text-align:center;
+    padding-right:75px;
+    padding-left:75px;
+}
+
+.center {
+    text-align:center;
+    padding-bottom:15px;
+}
+
+.padding {
+    padding-bottom:15px;
+}
+
+.main {
+
+  color:grey;
+
+}
+
+.main h2 {
+  color:red;
+  font-weight:bold;
+}
